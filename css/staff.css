@@ -1,0 +1,137 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@1,300&display=swap');
+
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background: url('../images/banner.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fffdd8;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #66648b;
+  color: #fffdd8;
+  padding: 20px;
+  z-index: 1000;
+  border-bottom: 2px solid #0f52ba;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 120px;
+  box-shadow: 0 2px 8px #0f52ba;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* attempt to get nav container below title */
+.nav-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #56a8bd;
+  color: #FFFDD4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #56a8bd;
+}
+
+.staff h2 {
+  background-color: rgba(90, 170, 220, 0.8);
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  font-family: 'Cinzel', serif;
+  margin-top: 40px;
+}
+
+.staff-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.staff-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.staff-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-box {
+  background-color: rgba(90, 170, 220, 0.8);
+  padding: 40px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.bio-paragraph {
+  margin-top: 20px;
+}
+
+.staff-row img {
+  width: 250px;
+  height: auto;
+  border: 4px solid #0f52ba;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  flex-shrink: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #66648b;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  border-top: 2px solid #0f52ba;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 8px #0f52ba;
+  width: 100%;
+}
